@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Complaint Submitted</title>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #000000, #222);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #FFA500;
+        margin: 0;
+        text-align: center;
+        animation: fadeIn 1s ease;
+    }
+
+    .box {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2.5rem 3rem;
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 25px rgba(255,165,0,0.2);
+        animation: popUp 0.8s ease;
+        border: 1px solid rgba(255,165,0,0.4);
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        color: #FFA500;
+        text-shadow: 0 0 10px rgba(255,165,0,0.6);
+    }
+
+    p {
+        color: #ddd;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+
+    a {
+        color: #111;
+        background: #FFA500;
+        text-decoration: none;
+        padding: 10px 22px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    a:hover {
+        background: #ffb733;
+        transform: translateY(-3px);
+        box-shadow: 0 0 10px rgba(255,165,0,0.5);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes popUp {
+        from { transform: scale(0.95); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+</style>
+</head>
+<body>
+<div class="box">
+    <h1>🎉 Complaint Submitted Successfully!</h1>
+    <p>We’ve received your complaint. You’ll be updated once it’s reviewed.</p>
+    <a href="index.php">← Back to Home</a>
+</div>
+</body>
+</html>
